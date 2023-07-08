@@ -30,42 +30,8 @@ for (let i = 0; i < dates.length; i++) {
 
 
 app.get("/",(req, res) => {
-    cron.schedule('* * * * *', async()=>{    
-        alert("Hello Kame hhhhh :) ");
-        // const auth = new google.auth.GoogleAuth({
-        //     keyFile : "credentials.json",
-        //     scopes : "https://www.googleapis.com/auth/spreadsheets"
-        // });
-
-        // const client = await auth.getClient();
-
-        // const googleSheets = google.sheets({version:"v4" , auth: client});
-
-        // const metadata = await googleSheets.spreadsheets.get({
-        //     auth,
-        //     spreadsheetId,
-            
-            
-        // });
-
-        // for (let i = 0; i < dateNumber.length; i++) {
-        //     await googleSheets.spreadsheets.values.append({
-        //         auth,
-        //         spreadsheetId,
-        //         range : "Work!A:A",
-        //         valueInputOption : "USER_ENTERED",
-        //         resource :{
-
-        //             values : [
-        //                 [dateNumber[i] , "-Bashar-"]                   
-        //             ],
-                    
-        //         }
-        //     })
-        // }
-
-    })
-
+        
+    alert("Hello Kame hhhhh :) ");
     res.send("Yes !");
 })
 
